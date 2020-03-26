@@ -9,9 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        var s: String = "Hallo"
+        
+        return VStack(content: {
+            TextField(title: "Hallo", value: s)
+        })
     }
 }
 
